@@ -24,9 +24,6 @@ $windrel = 0.5
 wind_plays = (ring 54,57,59,59,54,57,59,57)
 wind_sleeps = (ring $hpp,$pp+$hpp)
 
-define :main_play do |n|
-  play n+$randoff, amp: 0.5,release: $rele
-end
 define :play_part do |pl, sl, pl_amp=1, pl_rel=$pp|
   loop do
     play pl.tick(:plt),amp: pl_amp,release: pl_rel
